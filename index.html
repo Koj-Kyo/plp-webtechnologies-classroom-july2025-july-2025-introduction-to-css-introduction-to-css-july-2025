@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Basics & Box Model — Demo</title>
+  <meta name="description" content="Demonstration of CSS basics, Box Model properties, and clean styling practices.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>CSS Basics & The Box Model</h1>
+    <p class="subtitle">Understanding spacing, sizing, and layout foundations</p>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#box-model">Box Model</a></li>
+        <li><a href="#cards">Card Examples</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="intro" class="section">
+      <h2>Introduction to CSS</h2>
+      <p>CSS (Cascading Style Sheets) controls the visual presentation of HTML content. With CSS, you can change colors, fonts, spacing, and layout to create beautiful, accessible designs.</p>
+      <p>This page demonstrates fundamental CSS properties and the <strong>CSS Box Model</strong>—a core concept for understanding how elements are sized and spaced on the page.</p>
+    </section>
+
+    <section id="box-model" class="section box-model-demo">
+      <h2>The CSS Box Model</h2>
+      <p>Every HTML element is represented as a rectangular box. The Box Model consists of four layers:</p>
+      <ul>
+        <li><strong>Content:</strong> The actual content (text, images, etc.)</li>
+        <li><strong>Padding:</strong> Space between content and border</li>
+        <li><strong>Border:</strong> A line around the padding</li>
+        <li><strong>Margin:</strong> Space outside the border, separating elements</li>
+      </ul>
+
+      <div class="box-example">
+        <p>This box has visible padding, border, and margin applied. Inspect it to see the Box Model in action!</p>
+      </div>
+
+      <div class="box-example box-example-alt">
+        <p>This is a second example with different padding and border styling to show variation.</p>
+      </div>
+    </section>
+
+    <section id="cards" class="section">
+      <h2>Card Layout Example</h2>
+      <p>Cards are a common UI pattern. Below are three card components demonstrating Box Model spacing:</p>
+
+      <div class="card-container">
+        <div class="card">
+          <h3>Design</h3>
+          <p>Focus on clean, readable layouts with thoughtful spacing and visual hierarchy.</p>
+        </div>
+
+        <div class="card">
+          <h3>Accessibility</h3>
+          <p>Ensure sufficient contrast, clear fonts, and semantic HTML for all users.</p>
+        </div>
+
+        <div class="card">
+          <h3>Performance</h3>
+          <p>Keep CSS organized and avoid unnecessary complexity for faster load times.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="buttons" class="section">
+      <h2>Button Styling</h2>
+      <p>Buttons benefit from padding, borders, and hover states to improve usability:</p>
+      <div class="button-group">
+        <button class="btn btn-primary">Primary Action</button>
+        <button class="btn btn-secondary">Secondary Action</button>
+        <button class="btn btn-outline">Outline Button</button>
+      </div>
+    </section>
+
+    <aside class="callout">
+      <h3>💡 Pro Tip</h3>
+      <p>Use browser DevTools (F12) to inspect elements and visualize the Box Model interactively. You'll see margins, borders, padding, and content highlighted in different colors.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 CSS Basics Demo. Built for learning purposes.</p>
+  </footer>
+</body>
+</html>
